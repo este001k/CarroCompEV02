@@ -1,0 +1,131 @@
+    /* estilos normales en la pantalla principal y en el navbar */
+    *{
+        margin: 0;
+        pad: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        
+    }
+    
+    body{
+        background-color: rgb(241, 237, 237)
+        
+    }
+    
+    .Navhome{
+        background-color: #040242;
+        margin-top: 20px;
+        
+    }
+
+    .logo{
+      height: 120px;
+    }
+
+
+    .BarrainiciarSesion {
+        list-style: none;
+
+    }
+
+    .carrito{
+        height: 33%;
+        width: auto;
+    }
+    .imagenCarro {
+        height: 40px;
+        width: auto;
+    }
+
+    .subtitulo{
+        background-color: #c8c4f5;
+        border: 3px;
+        display: flex;
+        color: black;
+    }
+
+    .iconoHome{
+        height: 40px;
+    }
+
+
+    .Categoria{
+        float: left;
+        width: 25%;
+    }
+
+    .Wrapped{
+        float: left;
+        width: 75%;
+    }
+
+
+      
+
+
+    /* Estilo de la pantalla de breadcrumb de la izquierda */
+    
+    
+    .breadcrumb {
+        display: none;
+    }
+      
+    @media only screen and (min-width: 500px) {
+        .breadcrumb {
+          display: block;
+          background-color: #010024;
+          padding: 8px;
+    }
+        
+    .breadcrumb ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+        
+    .breadcrumb ol {
+      display: inline-block;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    
+    .breadcrumb ol:last-child {
+      margin-right: 0;
+    }
+    
+    .breadcrumb a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    }
+      
+    /* modificar lado derecho del Wrapped */
+
+    .carousel-inner {
+      height: 300px; /* Altura deseada para dispositivos móviles */
+    }
+    
+    @media (min-width: 375px) { /* todo esto esta basado en el iPhone 12 Pro */
+      .carousel-inner {
+        height: calc(100vh - 80px); /* Altura máxima para dispositivos móviles  problema con carrusel espacio en blanco a la derecha...*/
+      }
+    }
+    
+      
+      
+      
+      
+      
+      
+      
+  
+    
+
+    

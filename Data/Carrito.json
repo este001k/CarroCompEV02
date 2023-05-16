@@ -1,0 +1,104 @@
+{
+  "Carnes": [
+    {
+      "id":1,
+      "nombre": "Carne Molida",
+      "kilos": 2,
+      "precio": 3000,
+      "cantidad": 20,
+      "descripcion": "Carne molida de alta calidad",
+      "oferta": true,
+      "image":"https://previews.123rf.com/images/saddako/saddako1404/saddako140400002/27291524-carne-molida-congelada-en-un-paquete-de-pl%C3%A1stico.jpg"
+    },
+    {
+      "id":2,
+      "nombre": "Chuletas de cerdo",
+      "kilos": 1.5,
+      "precio": 1200,
+      "cantidad": 50,
+      "descripcion": "Chuletas de cerdo frescas",
+      "oferta": false
+    },
+    {
+      "id":3,
+      "nombre": "Filete de salmón",
+      "kilos": 0.800,
+      "precio": 7000,
+      "cantidad": 30,
+      "descripcion": "Filete de salmón fresco y saludable",
+      "oferta": false
+    },
+    {
+      "id":4,
+      "nombre": "Pollo entero",
+      "kilos": 1.5,
+      "precio": 4000,
+      "cantidad": 20,
+      "descripcion": "Pollo entero fresco",
+      "oferta": false
+    },
+    {
+      "id":5,
+      "nombre": "Carne molida de cerdo",
+      "kilos": 1.2,
+      "precio": 8000,
+      "cantidad": 15,
+      "descripcion": "Carne molida de cerdo de calidad",
+      "oferta": true
+    },
+    {
+      "id":6,
+      "nombre": "Costillas de res",
+      "kilos": 1.8,
+      "precio": 12000,
+      "cantidad": 10,
+      "descripcion": "Costillas de res tiernas y jugosas",
+      "oferta": false
+    },
+    {
+      "id":7,
+      "nombre": "Filete de ternera",
+      "kilos": 0.6,
+      "precio": 14.99,
+      "cantidad": 13,
+      "descripcion": "Filete de ternera de primera calidad",
+      "oferta": false
+    },
+    {
+      "id":8,
+      "nombre": "Lomo de cerdo",
+      "kilos": 1.2,
+      "precio": 9000,
+      "cantidad": 33,
+      "descripcion": "Lomo de cerdo fresco y jugoso",
+      "oferta": false
+    },
+    {
+      "id":9,
+      "nombre": "Pechuga de pollo",
+      "kilos": 1,
+      "precio": 2000,
+      "cantidad": 20,
+      "descripcion": "Pechuga de pollo fresca",
+      "oferta": true
+    },
+    {
+      "id":10,
+      "nombre": "Costillas de cerdo",
+      "kilos": 1.5,
+      "precio": 14000,
+      "cantidad": 70,
+      "descripcion": "Costillas de cerdo jugosas y deliciosas",
+      "oferta": false
+    },
+    {
+      "id":11,
+      "nombre": "Chuletas de cordero",
+      "kilos":3,
+      "precio":10000,
+      "cantidad":50,
+      "descripcion":"Chuleta fresquisima de calidad señor",
+      "oferta":false
+    }
+  ]
+}

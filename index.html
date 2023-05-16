@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito_Compra</title>
+    <link rel="stylesheet" href="Assets/Css/bootstrap5Css.css">
+    <link rel="stylesheet" href="Assets/Css/Style.css">
+</head>
+
+<body>
+  <nav class="navbar Navhome">
+    <div class="container-fluid ">
+      <div class="justify-content-between">
+        <a href="index.html"><img src="Assets/Images/Logo/LogoEmpresa.png" alt="Logo" class="logo"></a>
+      </div>
+      <form class="mx-auto buscador">
+        <input type="text" name="s" value="" placeholder="Búsqueda en catálogo" 
+               aria-label="Buscar" class="form-control text-center" autocomplete="off">
+      </form>
+      <ul class="BarrainiciarSesion">
+        <li class="nav-item dropdown dropdown-abrir">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Iniciar Sesion 😎
+          </a>
+          <ul class="dropdown-menu" data-bs-auto-close="outside">
+            <li><a class="dropdown-item" href="Iniciar_Sesion.html">Iniciar Sesion</a></li>
+            <li><a class="dropdown-item" href="Registrarse.html">Registrarse</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="carrito">
+        <a href="" button type="button">
+          <img src="Assets/Images/Logo/Carrito.png" alt="Carrito" class="imagenCarro">
+          <!-- pagina donde saque el logo del carrito: https://www.flaticon.es/iconos-gratis/anadir-al-carrito"-->
+        </a> 
+      </div>
+       
+    </div>
+  </nav>
+
+  <section class="navbar subtitulo">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="Assets/Images/Logo/HomeCasa.png" alt="" class="iconoHome"></a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#" style="color:white">Nosotros</a> Falta agregar una barra que diga quines somos asi como en el santa isabel -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Entregas y despachos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    
+  </section>
+
+
+ 
+  <header class="contenedorPadre">
+    <section class="Categoria">
+      <div class="breadcrumb">
+        <ol>
+          <a href="index.html">
+            <span>Inicio Home</span>
+          </a>
+          <div class="tree dynamiced">
+            <ul class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Carnes
+              </a>
+              <ul class="dropdown-menu" data-bs-auto-close="outside">
+                <li><a class="dropdown-item" href="Iniciar_Sesion.html">Promocion Carne</a></li>
+                <li><a class="dropdown-item" href="Registrarse.html">Cevhichado</a></li>
+              </ul>
+            </ul>
+            <ul class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Verduras
+              </a>
+              <ul class="dropdown-menu" data-bs-auto-close="outside">
+                <li><a class="dropdown-item" href="Iniciar_Sesion.html">Promocion Verdura</a></li>
+                <li><a class="dropdown-item" href="Registrarse.html">Verdureria</a></li>
+              </ul>
+            </ul>
+
+            <img src="https://www.mitiendacotidian.cl/arquivos/pasos-mobile-1v2.png?v=636991419749700000" alt="ZorroSabueso" style="height: 100%; width: 70%; text-align: center;">
+          </div> 
+        </ol>
+      </div>
+    </section>
+      <div class="Wrapped">
+      <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container-fluid px-0 w-100">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Assets/Images/Carrusel/carneLomovetado.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item container-fluid" data-bs-interval="2000">
+            <img src="Assets/Images/Carrusel/ofertaMayo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item container-fluid">
+            <img src="Assets/Images/Carrusel/productosNaturales.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <div id="carnes-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+
+    </div>
+  </header>
+  
+
+
+
+  <script src="Assets/Js/bootstrap5Js.js"></script>
+
+  <script>
+    //Script para que el boton que va hacia Dropdown-menu se habra al pasar el cursor
+    const dropdownHover = document.querySelectorAll('.dropdown-abrir');
+    dropdownHover.forEach(function (dropdown) {
+      dropdown.addEventListener('mouseenter', function () { //'mouseenter'es la accion se se busca con el cursor cuando entra
+        this.querySelector('.dropdown-menu').classList.add('show');
+      });
+      dropdown.addEventListener('mouseleave', function () { //'mouseleave' es la accion cuando el cursor sale del objeto
+        this.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+
+
+    fetch('Data/Carrito.json')
+      .then(response => response.json())
+      .then(Carnes => {
+        console.log(Carnes); 
+
+    for (let i = 0; i < Carnes.results.length; i++) {
+      const Carne = Carnes.results[i];
+      const card = document.createElement('div');
+      card.classList.add('col');
+
+      card.innerHTML = `
+        <div class="card shadow-sm">
+          <img src="${Carne.image}" alt="${Carne.id}" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">${Carne.nombre}</h5>
+            <p class="card-text">Kilo: ${Carne.kilos}</p>
+            <p class="card-text">precio: ${Carne.precio}$</p>
+            <p class="card-text">Cantidad disponible: ${Carne.cantidad}</p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('Carnes-grid').appendChild(card);
+    }
+    })
+    .catch(error => console.error(error));
+
+  </script>
+</body>
+</html>
