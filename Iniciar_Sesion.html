@@ -8,7 +8,23 @@
   <link rel="stylesheet" href="Assets/Css/Style.css">
   <link rel="stylesheet" href="Assets/Css/bootstrap5Css.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Assets/Css/PageSinCarrito.css">
 
+  <style>
+    .card{
+      margin: 30px;
+      margin-bottom: 60px;
+      color: black;
+      border-style: solid;
+      border-width: 30px;
+
+    }
+
+    .card-title{
+      border: solid;
+    }
+
+  </style>
 </head>
 <body>
   <nav class="navbar Navhome">
@@ -111,10 +127,10 @@
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Entregas y despachos</a>
+            <a class="nav-link" href="entregas_y_despacho.html" >Entregas y despachos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Términos y condiciones</a>
+            <a class="nav-link" href="Terminos_y_condiciones.html" >Términos y condiciones</a>
           </li>
         </ul>
       </div>
@@ -124,12 +140,39 @@
     
   </section>
 
+  <div class="card border-dark">
+    <div class="card-body">
+      <h5 class="card-title">Comienza Aqui...</h5>
+      <p class="form__paragraph" style="color: coral;">¿Aún no tienes una cuenta?<a href="Registrarse.html" class="form__link">Entra aquí</a></p>
+      <div class="container" id="form">
+        <div class="row justify-content mt-5">
+          <div class="col-md-6">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="correo" style="color: black;">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contraseña1" style="color: black;">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña1">
+                  </div>
+                  <div class="form-group">
+                    <label for="contraseña2" style="color: black;">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña2">
+                  </div>
+                  <button type="submit1" class="btn btn-primary">Iniciar</button>
+                  <p class="warnings" style="color: black;" id="warnings"></p>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
 
   
-  
-
-
-
   <footer class="final bg-dark text-light"> 
     <!-- problema con el body que se lleva el color completo .. arreglar en proxima actualizacion -->
     <div class="nav container">
@@ -170,6 +213,7 @@
 
   <script src="Assets/Js/bootstrap5Js.js"></script>
   <script src="Assets/Js/Custom.js"></script>
+  <script src="Assets/Js/formulario.js"></script>
 
 
 

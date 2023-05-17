@@ -1,9 +1,9 @@
     /* estilos normales en la pantalla principal y en el navbar */
-    *{
-      margin: 0;
-      pad: 0;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(255, 255, 255);
+  *{
+    margin: 0;
+    pad: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
       
   }
   
@@ -159,7 +159,7 @@
 
   /* modificar el dinal de la pagina */
   .nav-footer {
-    margin-top: 20px; /* Margen superior del footer */
+    margin-top: 50px; /* Margen superior del footer */
     background-color: black;
 
   }
