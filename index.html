@@ -7,12 +7,13 @@
     <title>Carrito_Compra</title>
     <link rel="stylesheet" href="Assets/Css/bootstrap5Css.css">
     <link rel="stylesheet" href="Assets/Css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
-
 <body>
   <nav class="navbar Navhome">
     <div class="container-fluid ">
-      <div class="justify-content-between">
+      <div class="justify-content-between" >
         <a href="index.html"><img src="Assets/Images/Logo/LogoEmpresa.png" alt="Logo" class="logo"></a>
       </div>
       <form class="mx-auto buscador">
@@ -31,7 +32,7 @@
         </li>
       </ul>
       <div class="carrito">
-        <a href="" button type="button">
+        <a button type="button-carro" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <img src="Assets/Images/Logo/Carrito.png" alt="Carrito" class="imagenCarro">
           <!-- pagina donde saque el logo del carrito: https://www.flaticon.es/iconos-gratis/anadir-al-carrito"-->
         </a> 
@@ -40,15 +41,74 @@
     </div>
   </nav>
 
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="color: black;">Imagen</th>
+              <th scope="col" style="color: black;">Nombre</th>
+              <th scope="col" style="color: black;">Precio</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-producto">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="d-grid gap-2">
+            <a href="https://wa.me/56978418968?text=Quiero%20comprar%20un%20PRODUCTO">
+              <button class="btn btn-success btn-lg" type="button">
+                Enviar compra a wsp <i class="fa-brands fa-whatsapp"></i> $ <span id="carrito-precio" style="color: black;">0</span>
+            </button>
+            </a>
+        </div>
+
+    </div>
+  </div>
+
+
   <section class="navbar subtitulo">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><img src="Assets/Images/Logo/HomeCasa.png" alt="" class="iconoHome"></a>
+            <a class="nav-link" href="index.html"><img src="Assets/Images/Logo/HomeCasa.png" alt="" class="iconoHome"></a>
           </li>
           <li class="nav-item">
-            <!-- <a class="nav-link" href="#" style="color:white">Nosotros</a> Falta agregar una barra que diga quines somos asi como en el santa isabel -->
+            <div class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#miModal">Nosotros ...</a>
+            </div>
+              <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="color: black;" id="miModalLabel">Quienes Somos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="color: black;">Bienvenidos a Super-merca-Shop, una empresa que está iniciando en el área de marketing de carrito de compra.
+                        Nos enorgullece ofrecer a nuestros clientes productos de la más alta calidad,
+                        como nuestra selección de carne de primera calidad. En Super-merca-Shop, nuestra misión es proporcionar una 
+                        experiencia de compra excepcional, y estamos comprometidos a garantizar que cada producto que ofrecemos 
+                        cumpla con los más altos estándares de calidad y frescura. Además de carne, ofrecemos una amplia variedad 
+                        de productos frescos y de alta calidad para satisfacer todas sus necesidades de compra. Nos esforzamos 
+                        por brindar un servicio excepcional y una experiencia de compra sin igual. Gracias por elegir a Super-merca-Shop.
+                        Los esperamos con los brazos abiertos para que reciba la mejor atencion al cliente...
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >Entregas y despachos</a>
@@ -71,37 +131,29 @@
       <div class="breadcrumb">
         <ol>
           <a href="index.html">
-            <span>Inicio Home</span>
+            <span>Inicio</span>
           </a>
-          <div class="tree dynamiced">
-            <ul class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                Carnes
-              </a>
-              <ul class="dropdown-menu" data-bs-auto-close="outside">
-                <li><a class="dropdown-item" href="Iniciar_Sesion.html">Promocion Carne</a></li>
-                <li><a class="dropdown-item" href="Registrarse.html">Cevhichado</a></li>
-              </ul>
-            </ul>
-            <ul class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                Verduras
-              </a>
-              <ul class="dropdown-menu" data-bs-auto-close="outside">
-                <li><a class="dropdown-item" href="Iniciar_Sesion.html">Promocion Verdura</a></li>
-                <li><a class="dropdown-item" href="Registrarse.html">Verdureria</a></li>
-              </ul>
-            </ul>
+            <div class="dropdown">
+              <button class="bottones bg-warning">Carnes ➡️</button>
+              <ui class="dropdown-content">
+                <li><a href="#"><button type="submit" style="color: rgb(0, 0, 0);">Otros..</button></a></li>
+                <li><a href="#"><button type="submit" style="color: red;">Vacuno</button></a></li>
+              </ui>
+              <button class="bottones text-success">Verduras y frutas➡️</button>
+              <ui class="dropdown-content2">
+                <li><a href="#"><button type="submit" style="color: rgb(3, 3, 3);">Verduras</button></a></li>
+                <li><a href="#"><button type="submit" style="color: rgb(3, 240, 34);"></Stronger>Frutas</Stronger></button></a></li>
+              </ui>
+            </div>
 
-            <img src="https://www.mitiendacotidian.cl/arquivos/pasos-mobile-1v2.png?v=636991419749700000" alt="ZorroSabueso" style="height: 100%; width: 70%; text-align: center;">
-          </div> 
+            <img src="https://www.mitiendacotidian.cl/arquivos/pasos-mobile-1v2.png?v=636991419749700000" alt="GuiaCompra" style="height: 100%; width: 70%; text-align: center;"> 
         </ol>
       </div>
     </section>
       <div class="Wrapped">
       <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner container-fluid px-0 w-100">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active" data-bs-interval="1000">
             <img src="Assets/Images/Carrusel/carneLomovetado.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item container-fluid" data-bs-interval="2000">
@@ -120,59 +172,238 @@
           <span class="visually-hidden">Next</span>
         </button>
       </section>
+      <!-- Creacion de productos de manera estatica para luego pasarles script en js mas abajo -->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm"
+                    id="producto-1"
+                    data-img="https://jumbo.vtexassets.com/arquivos/ids/652286/Carne-molida-5--grasa-500-g.jpg?v=638183044845570000"
+                    data-nombre="Carne molida"
+                    data-precio="1900"
+                    >
+                    <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vtexassets.com/arquivos/ids/652286/Carne-molida-5--grasa-500-g.jpg?v=638183044845570000" alt="" srcset="">
+                    <div class="card-body">
+                        <p class="card-dark" style="color: black;">Carne molida.</p>
+                        <p class="text-dark" style="color: black;">1.3kg</p>
+                        <p class="text-danger">$1900</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(1)">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-2"
+                  data-img="https://jumbo.vtexassets.com/arquivos/ids/643140-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Lomo liso"
+                  data-precio="20000"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vtexassets.com/arquivos/ids/643140-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-dark" style="color: black;">Lomo liso.</p>
+                      <p class="text-dark" style="color: black;">3kg</p>
+                      <p class="text-danger">$20000</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(2)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-3"
+                  data-img="https://jumbo.vtexassets.com/arquivos/ids/485833-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Pechuga pollo"
+                  data-precio="3190"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vtexassets.com/arquivos/ids/485833-280-280?width=280&height=280&aspect=true alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-dark" style="color: black;">Pechuga pollo.</p>
+                      <p class="text-dark" style="color: black;">1kg</p>
+                      <p class="text-danger">$3190</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(3)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-4"
+                  data-img="https://jumbo.vtexassets.com/arquivos/ids/416123-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Naranja"
+                  data-precio="1200"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vtexassets.com/arquivos/ids/416123-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-dark" style="color: black;">Naranja.</p>
+                      <p class="text-dark" style="color: black;">600gr</p>
+                      <p class="text-danger">$1200</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(4)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-5"
+                  data-img="https://jumbo.vtexassets.com/arquivos/ids/424497-280-280?width=280&height=280&aspect=true"
+                  data-nombre="Coliflor"
+                  data-precio="1500"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vtexassets.com/arquivos/ids/424497-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-dark" style="color: black;">Coliflor.</p>
+                      <p class="text-dark" style="color: black;">1un.</p>
+                      <p class="text-danger">$1500</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(5)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm"
+                  id="producto-6"
+                  data-img="https://jumbo.vteximg.com.br/arquivos/ids/424556-280-280?width=280&height=280&aspect=true"
+                  data-nombre="pack platano"
+                  data-precio="3000"
+                  >
+                  <img class="bd-placeholder-img card-img-top"  width="100" src="https://jumbo.vteximg.com.br/arquivos/ids/424556-280-280?width=280&height=280&aspect=true" alt="" srcset="">
+                  <div class="card-body">
+                      <p class="card-dark" style="color: black;">Pack platanos.</p>
+                      <p class="text-dark" style="color: black;">600gr.</p>
+                      <p class="text-danger">$3000</p>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-primary" type="button" id="btnComprar" onclick="comprar(6)">Comprar</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
 
-      <div id="carnes-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
 
+        </div>
+        </div>
+      </div>
     </div>
   </header>
+  
+  <footer class="final bg-dark text-light"> 
+    <!-- problema con el body que se lleva el color completo .. arreglar en proxima actualizacion -->
+    <div class="nav container">
+      <div class="row pt-4">
+        <div class="col-md-4 mb-2">
+          <h6>¿Quiénes somos?</h6>
+          <div class="text">
+            <p>Nuestra empresa es muy prestigiosa . Capaz de ser mundialmente reconocida.
+              estamos trabajando para dar siempre los mejores servicios a todos nuestros 
+              queridos clientes . Esperamos agradecidamente que quede Gusto con 
+              Nuestros Productos...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h>Soporte</h5>
+          <ul class="list-unstyled">
+            <li class="text">Contacto:+56 965902387<li>
+            <li class="text">Centro de ayuda al vaya a las redes sociales</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h3>Redes sociales</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text">Instagram</a></li>
+            <li><a href="#" class="text">Facebook</a></li>
+            <li><a href="#" class="text">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col-md-6">
+          <p class="text">&copy; 2023 Compañia Seria. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   
 
 
 
+  
+  <script src="Assets/Js/Custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="Assets/Js/bootstrap5Js.js"></script>
-
+  
   <script>
-    //Script para que el boton que va hacia Dropdown-menu se habra al pasar el cursor
-    const dropdownHover = document.querySelectorAll('.dropdown-abrir');
-    dropdownHover.forEach(function (dropdown) {
-      dropdown.addEventListener('mouseenter', function () { //'mouseenter'es la accion se se busca con el cursor cuando entra
-        this.querySelector('.dropdown-menu').classList.add('show');
-      });
-      dropdown.addEventListener('mouseleave', function () { //'mouseleave' es la accion cuando el cursor sale del objeto
-        this.querySelector('.dropdown-menu').classList.remove('show');
-      });
-    });
-
-
-    fetch('Data/Carrito.json')
-      .then(response => response.json())
-      .then(Carnes => {
-        console.log(Carnes); 
-
-    for (let i = 0; i < Carnes.results.length; i++) {
-      const Carne = Carnes.results[i];
-      const card = document.createElement('div');
-      card.classList.add('col');
-
-      card.innerHTML = `
-        <div class="card shadow-sm">
-          <img src="${Carne.image}" alt="${Carne.id}" class="bd-placeholder-img card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">${Carne.nombre}</h5>
-            <p class="card-text">Kilo: ${Carne.kilos}</p>
-            <p class="card-text">precio: ${Carne.precio}$</p>
-            <p class="card-text">Cantidad disponible: ${Carne.cantidad}</p>
-            <div class="d-flex justify-content-between align-items-center">
-            </div>
-          </div>
-        </div>
-      `;
-
-      document.getElementById('Carnes-grid').appendChild(card);
+    var array_productos = [];
+  
+    if (localStorage.getItem('PRODUCTOS')) {
+      array_productos = JSON.parse(localStorage.getItem('PRODUCTOS')) || [];
     }
-    })
-    .catch(error => console.error(error));
-
+  
+    function comprar(id) {
+      var producto = $('#producto-' + id);
+  
+      var p = {
+        id: id,
+        img: producto.data('img'),
+        nombre: producto.data('nombre'),
+        precio: producto.data('precio')
+      };
+  
+      array_productos.push(p);
+  
+      console.log(array_productos);
+  
+      localStorage.setItem('PRODUCTOS', JSON.stringify(array_productos));
+  
+      llenar_carrito();
+    }
+  
+    function llenar_carrito() {
+      $('#carrito-producto').html('');
+      var texto = '';
+      var total = 0;
+      array_productos.forEach(producto => {
+        texto = texto + `
+        <tr>
+          <td><img src="${producto.img}" width="50px"></td>
+          <td style="color: black;">${producto.nombre} </td>
+          <td style="color: black;">$${producto.precio}</td>
+          <td style="color: black;"><button class="eliminar-producto" style="color: black;" data-id="${producto.id}">Eliminar</button></td>
+        </tr>
+        `;
+  
+        total += producto.precio;
+      });
+  
+      $('#carrito-producto').append(texto);
+      $('#carrito-precio').html(total);
+    }
+  
+    $(document).ready(function() {
+      // falta mejorar La funcion ...Al pulsar el boton elimina muchos productos con el mismo id
+      $('#carrito-producto').on('click', '.eliminar-producto', function() {
+        var productoId = $(this).data('id');
+        eliminarProducto(productoId);
+      });
+  
+      function eliminarProducto(id) {
+        array_productos = array_productos.filter(function(producto) {
+          return producto.id !== id;
+        });
+  
+        localStorage.setItem('PRODUCTOS', JSON.stringify(array_productos));
+  
+        llenar_carrito();
+      }
+    });
   </script>
+  
+  
 </body>
 </html>
