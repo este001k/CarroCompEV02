@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminos y condiciones</title>
+  <link rel="stylesheet" href="Assets/Css/bootstrap5Css.css">
+  <link rel="stylesheet" href="Assets/Css/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <nav class="navbar Navhome">
+    <div class="container-fluid ">
+      <div class="justify-content-between" >
+        <a href="index.html"><img src="Assets/Images/Logo/LogoEmpresa.png" alt="Logo" class="logo"></a>
+      </div>
+      <form class="mx-auto buscador">
+        <input type="text" name="s" value="" placeholder="Búsqueda en catálogo" 
+               aria-label="Buscar" class="form-control text-center" autocomplete="off">
+      </form>
+      <ul class="BarrainiciarSesion">
+        <li class="nav-item dropdown dropdown-abrir">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Iniciar Sesion 😎
+          </a>
+          <ul class="dropdown-menu" data-bs-auto-close="outside">
+            <li><a class="dropdown-item" href="Iniciar_Sesion.html">Iniciar Sesion</a></li>
+            <li><a class="dropdown-item" href="Registrarse.html">Registrarse</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="carrito">
+        <a button type="button-carro" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <img src="Assets/Images/Logo/Carrito.png" alt="Carrito" class="imagenCarro">
+          <!-- pagina donde saque el logo del carrito: https://www.flaticon.es/iconos-gratis/anadir-al-carrito"-->
+        </a> 
+      </div>
+       
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="color: black;">Imagen</th>
+              <th scope="col" style="color: black;">Nombre</th>
+              <th scope="col" style="color: black;">Precio</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-producto">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <div class="d-grid gap-2">
+            <a href="https://wa.me/56978418968?text=Quiero%20comprar%20un%20PRODUCTO">
+              <button class="btn btn-success btn-lg" type="button">
+                Enviar compra a wsp <i class="fa-brands fa-whatsapp"></i> $ <span id="carrito-precio" style="color: black;">0</span>
+            </button>
+            </a>
+        </div>
+
+    </div>
+  </div>
+
+
+  <section class="navbar subtitulo">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="Assets/Images/Logo/HomeCasa.png" alt="" class="iconoHome"></a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#miModal">Nosotros ...</a>
+            </div>
+              <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="color: black;" id="miModalLabel">Quienes Somos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="color: black;">Bienvenidos a Super-merca-Shop, una empresa que está iniciando en el área de marketing de carrito de compra.
+                        Nos enorgullece ofrecer a nuestros clientes productos de la más alta calidad,
+                        como nuestra selección de carne de primera calidad. En Super-merca-Shop, nuestra misión es proporcionar una 
+                        experiencia de compra excepcional, y estamos comprometidos a garantizar que cada producto que ofrecemos 
+                        cumpla con los más altos estándares de calidad y frescura. Además de carne, ofrecemos una amplia variedad 
+                        de productos frescos y de alta calidad para satisfacer todas sus necesidades de compra. Nos esforzamos 
+                        por brindar un servicio excepcional y una experiencia de compra sin igual. Gracias por elegir a Super-merca-Shop.
+                        Los esperamos con los brazos abiertos para que reciba la mejor atencion al cliente...
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="entregas_y_despacho.html" >Entregas y despachos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Terminos_y_condiciones.html" >Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    
+  </section>
+
+
+  
+
+
+
+
+  <footer class="final bg-dark text-light"> 
+    <!-- problema con el body que se lleva el color completo .. arreglar en proxima actualizacion -->
+    <div class="nav container">
+      <div class="row pt-4">
+        <div class="col-md-4 mb-2">
+          <h6>¿Quiénes somos?</h6>
+          <div class="text">
+            <p>Nuestra empresa es muy prestigiosa . Capaz de ser mundialmente reconocida.
+              estamos trabajando para dar siempre los mejores servicios a todos nuestros 
+              queridos clientes . Esperamos agradecidamente que quede Gusto con 
+              Nuestros Productos...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h>Soporte</h5>
+          <ul class="list-unstyled">
+            <li class="text">Contacto:+56 965902387<li>
+            <li class="text">Centro de ayuda al vaya a las redes sociales</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h3>Redes sociales</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text">Instagram</a></li>
+            <li><a href="#" class="text">Facebook</a></li>
+            <li><a href="#" class="text">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col-md-6">
+          <p class="text">&copy; 2023 Compañia Seria. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Assets/Js/bootstrap5Js.js"></script>
+  <script src="Assets/Js/Custom.js"></script>
+
+
+
+</body>
+</html>
